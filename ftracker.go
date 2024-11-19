@@ -74,7 +74,7 @@ func ShowTrainingInfo(action int, trainingType string, duration, weight, height 
 
 		speed := swimmingMeanSpeed(lengthPool, countPool, duration) // вызовите здесь необходимую функцию
 
-		calories := wimmingSpentCalories(lengthPool, countPool, duration, weight) // вызовите здесь необходимую функцию
+		calories := swimmingSpentCalories(lengthPool, countPool, duration, weight) // вызовите здесь необходимую функцию
 
 		return fmt.Sprintf("Тип тренировки: %s\nДлительность: %.2f ч.\nДистанция: %.2f км.\nСкорость: %.2f км/ч\nСожгли калорий: %.2f\n", trainingType, duration, distance, speed, calories)
 
